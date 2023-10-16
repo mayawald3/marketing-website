@@ -1,9 +1,46 @@
 header {
-  text-align: center;
-}
- .logo{
-  height: 25%;
-  width: 25%;
+  /*background: linear-gradient(to bottom left,  #971D20, #630C23, #266265 75%);*/
+  background: #971D20;
+  color: #F4FAFA;
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
+footer {
+  text-align: center;
+  background-color: #971D20;
+  color: #F4FAFA;
+}
+@font-face{
+  font-family: ArchivoVariable;
+  src: url('../../../assets/fonts/Archivo-VariableFont_wdth,wght.ttf');
+}
+h1 {
+  margin: 0;
+  font-family: ArchivoVariable, sans-serif;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+ .header-buttons {
+   padding: 0 250px 20px 250px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .index-button {
+   cursor: pointer;
+   /*border-radius: 25px;*/
+   padding: 10px;
+   color: white;
+   font-family: ArchivoVariable, sans-serif;
+   letter-spacing: 5px;
+   /*font-weight: bold;*/
+   border: 2px solid white;
+   background: transparent;
+ }
+
+ .index-button:hover {
+   background-color: rgb(84, 22, 22);
+ }
 

@@ -1,3 +1,105 @@
-<div>
-  <p>{{title}}</p>
+<div class="row">
+  <div class="top-row">
+    <header>SERVICES</header>
+  </div>
+  <div class="top-row message">WITH OUR SOCIAL MEDIA PACKAGES AND ADD-ONS AS WELL AS OUT-SOURCED
+    SERVICES, WE WILL BRING YOUR COMPANY'S MARKETING UP TO PAR WITH YOUR COMPETITORS AND THE LATEST
+    INDUSTRY STANDARDS.</div>
 </div>
+<div class="row">
+  <div class="consulation-row"><button mat-fab extended class="feature-buttons"
+                                       (click)="goToNewPage(PageSelector.CONTACT)">BOOK<mat-icon>event</mat-icon></button>
+    YOUR FREE CONSULTATION WITH US TODAY TO DISCUSS YOUR
+  BUSINESS AND HOW WE CAN HELP YOU REACH YOUR GOALS</div>
+</div>
+<div class="row package-row">
+  <div class="box column main-column " (click)="toggleFlip(1)" [@flipState]="flipCard1">
+    <div class="side front">
+     <h1>STAPLE SOCIAL PACKAGE</h1><img [src]="Images.STAPLE_ICON" alt="image">
+    </div>
+    <div class="side back">
+      <h1>STAPLE SOCIAL
+      </h1>
+      <ul>
+        <li><mat-icon>show_chart</mat-icon>   3x posts per week (static or carousel on both Facebook & Instagram</li>
+        <li><mat-icon>show_chart</mat-icon>   3x story posts per week on both Facebook & Instagram</li>
+        <li>
+          <ul>
+            <li><mat-icon>show_chart</mat-icon>   Content Strategy Calendar delivered before the 1st of the month</li>
+            <li><mat-icon>show_chart</mat-icon>   Assets & Caption Creation + Platform Scheduling</li>
+            <li><mat-icon>show_chart</mat-icon>   Hashtag & Keyword Research + Implementation</li>
+            <li><mat-icon>show_chart</mat-icon>   Quarterly Analytics Insights & Performance</li>
+            <li><mat-icon>show_chart</mat-icon>   Community Management: 2 hours/week of Interacting with your Audience</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="box column description-column " (click)="toggleFlip(2)" [@flipState]="flipCard2">
+    <div class="side front">
+      <h1>EXCEL SOCIAL PACKAGE</h1><img [src]="Images.EXCEL_ICON" alt="image" style="width:150px; height: 150px;">
+    </div>
+    <div class="side back">
+      <h1>EXCEL SOCIAL</h1>
+      <ul>
+        <li><mat-icon>show_chart</mat-icon>   5x posts per week (static or carousel on both Facebook & Instagram</li>
+        <li><mat-icon>show_chart</mat-icon>   4x story posts per week on both Facebook & Instagram</li>
+        <li>
+          <ul>
+            <li><mat-icon>show_chart</mat-icon>   Content Strategy Calendar delivered before the 1st of the month</li>
+            <li><mat-icon>show_chart</mat-icon>   Assets & Caption Creation + Platform Scheduling</li>
+            <li><mat-icon>show_chart</mat-icon>   Hashtag & Keyword Research + Implementation</li>
+            <li><mat-icon>show_chart</mat-icon>   Quarterly Analytics Insights & Performance</li>
+            <li><mat-icon>show_chart</mat-icon>   Community Management: 2 hours/week of Interacting with your Audience</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="box column main-column " (click)="toggleFlip(3)" [@flipState]="flipCard3">
+    <div class="side front">
+      <h1>SUPERIOR SOCIAL PACKAGE</h1><img [src]="Images.SUPERIOR_ICON" alt="image" style="width:150px; height: 150px;">
+    </div>
+    <div class="side back">
+      <h1>SUPERIOR SOCIAL</h1>
+      <ul>
+        <li><mat-icon>show_chart</mat-icon>   7x posts per week (static or carousel on both Facebook & Instagram</li>
+        <li><mat-icon>show_chart</mat-icon>   5x story posts per week on both Facebook & Instagram</li>
+        <li>
+          <ul>
+            <li><mat-icon>show_chart</mat-icon>   Content Strategy Calendar delivered before the 1st of the month</li>
+            <li><mat-icon>show_chart</mat-icon>   Assets & Caption Creation + Platform Scheduling</li>
+            <li><mat-icon>show_chart</mat-icon>   Hashtag & Keyword Research + Implementation</li>
+            <li><mat-icon>show_chart</mat-icon>   Quarterly Analytics Insights & Performance</li>
+            <li><mat-icon>show_chart</mat-icon>   Community Management: 2 hours/week of Interacting with your Audience</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="box column description-column " (click)="toggleFlip(4)" [@flipState]="flipCard4">
+    <div class="side front">
+      <h1>ADD-ONS AND MORE</h1><img [src]="Images.PLUS_ICON" alt="image" style="width:150px; height: 150px;">
+    </div>
+    <div class="side back">
+      <h1  style="font-size: 30pt; line-height: 40px; padding:0px 10px;">ADD-ONS + CUSTOM CONTENT</h1>
+      <ul>
+        <li><mat-icon>show_chart</mat-icon>   Starting fresh? Utilize our start to finish account setup for Facebook, Instagram, or LinkedIn </li>
+        <li><mat-icon>show_chart</mat-icon>   Paid Ad Campaign creation and management optimized for performance and results</li>
+        <li><mat-icon>show_chart</mat-icon>   Content Video & Photography Shoots can be provided for custom content creation</li>
+        <li><mat-icon>show_chart</mat-icon>   Need some marketing help outside of social media? We can provide custom:</li>
+        <li>
+          <ul>
+            <li><mat-icon>show_chart</mat-icon>   Business Cards</li>
+            <li><mat-icon>show_chart</mat-icon>   Event/Business Flyers</li>
+            <li><mat-icon>show_chart</mat-icon>   Billboard Designs</li>
+            <li><mat-icon>show_chart</mat-icon>   Clickable Email Signatures</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
