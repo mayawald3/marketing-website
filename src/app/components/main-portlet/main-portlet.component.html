@@ -1,22 +1,31 @@
 <header>
-  <img class="logo" [src]="Images.logo" alt="image" >
-  <h1>{{companyName}}</h1>
-    <button mat-flat-button color="link" (click)="onTabClick(PageSelector.LANDING)">Home</button>
-    <button mat-flat-button color="link" (click)="onTabClick(PageSelector.SERVICES)">Services</button>
-    <button mat-flat-button color="link" (click)="onTabClick(PageSelector.WORK_HISTORY)">Our Work</button>
-    <button mat-flat-button color="link" (click)="onTabClick(PageSelector.CONTACT)">Contact Us</button>
+  <div class="header-buttons">
+    <button class="index-button" (click)="onTabClick(PageSelector.LANDING)">HOME</button>
+    <button class="index-button" (click)="onTabClick(PageSelector.SERVICES)">SERVICES</button>
+    <button class="index-button" (click)="onTabClick(PageSelector.WORK_HISTORY)">PORTFOLIO</button>
+    <button class="index-button" (click)="onTabClick(PageSelector.CONTACT)">CONTACT US</button>
+  </div>
+  <div>
+    <img [src]="Images.LOGO_TEXT" alt="image" >
+    <h1>Social Media Management Agency</h1>
+  </div>
 </header>
+
 <div [ngSwitch]="pageSelector.value">
-  <pre *ngSwitchCase="PageSelector.LANDING">
-    <landing-page></landing-page>
-  </pre>
+  <div style="padding: 0; margin: 0;" *ngSwitchCase="PageSelector.LANDING">
+    <landing-page (switchTabs)="onTabClick($event)"></landing-page>
+  </div>
   <pre *ngSwitchCase="PageSelector.WORK_HISTORY">
     <work-history></work-history>
   </pre>
   <pre *ngSwitchCase="PageSelector.SERVICES">
-    <services></services>
+    <services (switchTabs)="onTabClick($event)"></services>
   </pre>
   <pre *ngSwitchCase="PageSelector.CONTACT">
     <contact></contact>
   </pre>
 </div>
+<footer>
+  <p>St. Paul and Minneapolis, Minnesota</p>
+  <p>maddiewald.marketing@gmail.com</p>
+</footer>

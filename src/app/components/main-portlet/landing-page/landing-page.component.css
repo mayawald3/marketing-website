@@ -1,0 +1,91 @@
+@font-face{
+  font-family: ArchivoVariable;
+  src: url('../../../../assets/fonts/Archivo-VariableFont_wdth,wght.ttf');
+}
+@font-face{
+  font-family: blankaRegular;
+  src: url('../../../../assets/fonts/Blanka-Regular.otf');
+}
+.pageContainer {
+  background-color: #F4FAFA;
+  padding-top: 0;
+}
+
+.image-div {
+  width: 50%;
+  height: 500px;
+  margin: 50px 0 50px 100px;
+  background-image: url("../../../../assets/images/areYouReady.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.message {
+  padding-top: 100px;
+  height: 500px;
+  width: 500px;
+  color: black;
+  font-family: ArchivoVariable, sans-serif;
+  letter-spacing: 4px;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 25pt;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: left;
+  padding-left: 150px;
+}
+
+.feature-buttons {
+  background-color: #971D20;
+  color: #F4FAFA;
+}
+
+.row {
+  height: 600px;
+  display: flex;
+}
+
+.column {
+  font-family: ArchivoVariable, sans-serif;
+  font-weight: bold;
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.box {
+  width: 50%;
+  transform-style: preserve-3d;
+  height: 500px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  font-family: ArchivoVariable, sans-serif;
+}
+.front {
+  line-height: 500px;
+  text-align: center;
+  background: #971D20;
+  transform: rotateY(0deg);
+  color: #F4FAFA;
+}
+.back {
+  line-height: 30px;
+  background: #F4FAFA;
+  transform: rotateY(-180deg);
+  color: #971D20;
+}
+
