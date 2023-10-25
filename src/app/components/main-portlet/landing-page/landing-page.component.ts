@@ -27,6 +27,11 @@ export class LandingPageComponent {
   flipCard3: string = 'inactive';
   flipCard4: string = 'inactive';
 
+  missionStatement = "BASED OUT OF THE TWIN CITIES, WE PROVIDE RESULTS DRIVEN SOCIAL MEDIA MANAGEMENT. WE ENSURE YOUR CONTENT STAYS FRESH, RELEVANT, AND PERFECTLY ALIGNED WITH YOUR INDUSTRY."
+  createStatement = "We prioritize our clients by creating a marketing strategy that aligns to their marketing goals to contribute to the overall success of their company. We specialize in crafting, scheduling, and optimizing curated content across your social media platforms, ensuring that your online presence is nothing short of exceptional."
+  chargeStatement = "We're here to supercharge your online presence by managing digital paid ad campaigns that precisely target your ideal customers. Our goal is to help you build unwavering brand recognition and awareness, establishing a lasting connection with your business's target audience."
+  buildStatement = "We don't just create content; we create experiences that resonate with your audience and drive results. Our expert team leverages data-driven insights and analytics to deliver real-time reports on your social media performance, helping you make informed decisions and seize opportunities for growth."
+  succeedStatement = "We are your trusted partner in the digital landscape, always on the cutting edge of industry keywords and trends. Saving your precious time by obtaining, organizing, and optimizing content on your social media platforms, we guarantee that your brand's voice will be heard and respected."
 
   goToNewPage(page: PageSelector){
     this.switchTabs.emit(page)

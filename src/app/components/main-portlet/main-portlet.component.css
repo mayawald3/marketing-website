@@ -44,3 +44,8 @@ h1 {
    background-color: rgb(84, 22, 22);
  }
 
+ pre {
+   margin: 0;
+   background-color: #F4FAFA;
+ }
+

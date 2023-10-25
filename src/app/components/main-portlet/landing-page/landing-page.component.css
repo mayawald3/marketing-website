@@ -6,7 +6,7 @@
   font-family: blankaRegular;
   src: url('../../../../assets/fonts/Blanka-Regular.otf');
 }
-.pageContainer {
+.page-container {
   background-color: #F4FAFA;
   padding-top: 0;
 }
@@ -15,26 +15,58 @@
   width: 50%;
   height: 500px;
   margin: 50px 0 50px 100px;
-  background-image: url("../../../../assets/images/areYouReady.webp");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.are-you-ready {
+  background-image: url("../../../../assets/images/areYouReady.webp");
+}
+
+.first-pillar {
+  background-image: url("../../../../assets/images/1pillar.png");
+}
+
+.second-pillar {
+  background-image: url("../../../../assets/images/2pillars.png");
+}
+
+.third-pillar {
+  background-image: url("../../../../assets/images/3pillars.png");
+}
+
+.fourth-pillar {
+  background-image: url("../../../../assets/images/4pillars.png");
 }
 
 .message {
   padding-top: 100px;
   height: 500px;
-  width: 500px;
+  width: 700px;
   color: black;
   font-family: ArchivoVariable, sans-serif;
   letter-spacing: 4px;
   font-weight: bold;
   line-height: 40px;
-  font-size: 25pt;
+  font-size: 22pt;
   word-break: break-word;
   white-space: normal;
   overflow-wrap: break-word;
   text-align: left;
-  padding-left: 150px;
+  padding-left: 75px;
+}
+
+.small-message {
+  letter-spacing: 1px;
+  font-weight: lighter;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+.small-message > header {
+  font-weight: bold;
+  font-size: 30px;
+  color: #971D20;
 }
 
 .feature-buttons {
@@ -53,39 +85,5 @@
   width: 50%;
 }
 
-ul {
-  list-style-type: none;
-}
 
-.box {
-  width: 50%;
-  transform-style: preserve-3d;
-  height: 500px;
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
-.side {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  font-size: 24px;
-  cursor: pointer;
-  user-select: none;
-  font-family: ArchivoVariable, sans-serif;
-}
-.front {
-  line-height: 500px;
-  text-align: center;
-  background: #971D20;
-  transform: rotateY(0deg);
-  color: #F4FAFA;
-}
-.back {
-  line-height: 30px;
-  background: #F4FAFA;
-  transform: rotateY(-180deg);
-  color: #971D20;
-}
 

@@ -1,5 +1,9 @@
+.page-container {
+  background-color: #F4FAFA;
+  padding-top: 0;
+}
+
 .row {
-  /*height: 300px;*/
   display: flex;
 }
 
@@ -7,7 +11,7 @@
   height: 600px;
 }
 
-.consulation-row {
+.consultation-row {
   margin: 0 100px 50px 100px;
   height: 50px;
   width: 100%;
@@ -62,6 +66,7 @@
 
 ul {
   list-style-type: none;
+  padding-right: 10px;
 }
 
 .box {
@@ -82,20 +87,23 @@ ul {
   user-select: none;
   font-family: ArchivoVariable, sans-serif;
 }
+
 .front {
   text-align: center;
   background: #971D20;
   transform: rotateY(0deg);
 }
+
 .back {
-  line-height: 30px;
+  line-height: 25px;
   font-size: 12pt;
   background: #F4FAFA;
   transform: rotateY(-180deg);
   color: #971D20;
 }
+
 .front > h1{
-  padding: 0px 20px;
+  padding: 0 20px;
   line-height: 50px;
   text-align: center;
   margin-top: 150px;
@@ -107,13 +115,20 @@ ul {
   white-space: normal;
   overflow-wrap: break-word;
 }
+
 .back > h1 {
   text-align: center;
   margin-top: 30px;
-  font-size: 35pt;
+  font-size: 30pt;
   font-family: blankaRegular, sans-serif;
 }
+
 img {
   height: 200px;
   width: 200px;
+}
+
+a {
+  color: #F4FAFA;
+  text-decoration: none;
 }
