@@ -6,5 +6,4 @@ import {Component} from "@angular/core";
   styleUrls: ['./work-history.component.css']
 })
 export class WorkHistoryComponent {
-  title = 'work-history'
 }

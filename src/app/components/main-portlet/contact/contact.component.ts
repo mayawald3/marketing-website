@@ -10,7 +10,8 @@ export class ContactComponent {
 
   isSubmitted = false;
 
-  Services = ['Content Creation',
+  Services = ['Free Consultation',
+    'Content Creation',
     'Social Media Management',
     'Paid Ad Campaigns',
     'Building My Brand',

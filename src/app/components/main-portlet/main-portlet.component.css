@@ -7,6 +7,8 @@ header {
 }
 
 footer {
+  padding-top: 15px;
+  padding-bottom: 10px;
   text-align: center;
   background-color: #971D20;
   color: #F4FAFA;
@@ -30,12 +32,10 @@ h1 {
 
  .index-button {
    cursor: pointer;
-   /*border-radius: 25px;*/
    padding: 10px;
    color: white;
    font-family: ArchivoVariable, sans-serif;
    letter-spacing: 5px;
-   /*font-weight: bold;*/
    border: 2px solid white;
    background: transparent;
  }
@@ -47,5 +47,13 @@ h1 {
  pre {
    margin: 0;
    background-color: #F4FAFA;
+ }
+
+ a {
+   color: white;
+ }
+
+ a:hover {
+   color: black;
  }
 

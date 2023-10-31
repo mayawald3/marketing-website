@@ -1,0 +1,39 @@
+@font-face{
+  font-family: ArchivoVariable;
+  src: url('../../../../assets/fonts/Archivo-VariableFont_wdth,wght.ttf');
+}
+
+.page-container {
+  background-color: #F4FAFA;
+}
+
+.row {
+  display: flex;
+}
+
+.top-row {
+  height: 400px;
+  width: 500px;
+  color: black;
+  font-family: ArchivoVariable, sans-serif;
+  letter-spacing: 3px;
+  font-weight: normal;
+  line-height: 40px;
+  font-size: 17pt;
+}
+
+.top-row > header{
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 50px;
+  font-family: blankaRegular, sans-serif;
+  font-size: 50pt;
+  font-weight: bold;
+}
+
+.top-row.message {
+  width: 50%;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}

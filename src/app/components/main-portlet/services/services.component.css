@@ -97,9 +97,9 @@ ul {
 .back {
   line-height: 25px;
   font-size: 12pt;
-  background: #F4FAFA;
+  background: black;
   transform: rotateY(-180deg);
-  color: #971D20;
+  color: white;
 }
 
 .front > h1{
