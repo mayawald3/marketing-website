@@ -45,8 +45,9 @@ h1 {
  }
 
  pre {
+   padding: 20px;
    margin: 0;
-   background-color: #F4FAFA;
+   background: #F4FAFA;
  }
 
  a {

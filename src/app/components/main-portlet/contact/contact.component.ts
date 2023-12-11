@@ -44,6 +44,7 @@ export class ContactComponent {
   }
 
   submitInquiry() {
+    gtag('event', 'contact_us_submitted');
     this.isSubmitted = true;
     if (!this.form.valid) {
       return false

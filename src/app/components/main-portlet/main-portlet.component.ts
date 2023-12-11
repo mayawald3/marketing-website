@@ -1,7 +1,7 @@
-import {AfterViewInit, Component, ViewChild} from "@angular/core";
-import {BehaviorSubject} from "rxjs";
+import {Component} from "@angular/core";
 import {PageSelector} from "../../api/page-selector.enum"
 import {Images} from "../../api/images.enum"
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'main-portlet',
@@ -9,10 +9,22 @@ import {Images} from "../../api/images.enum"
   styleUrls: ['./main-portlet.component.css']
 })
 export class MainPortletComponent {
-  pageSelector: BehaviorSubject<PageSelector> = new BehaviorSubject<PageSelector>(PageSelector.LANDING)
-
+  constructor(private router: Router) {
+  }
   onTabClick(pageSelector: PageSelector) {
-    this.pageSelector.next(pageSelector)
+    switch (pageSelector) {
+      case PageSelector.LANDING:
+        this.router.navigate(['home'])
+        break
+      case PageSelector.CONTACT:
+        this.router.navigate(['contact-us'])
+        break
+      case PageSelector.WORK_HISTORY:
+        this.router.navigate(['portfolio'])
+        break
+      case PageSelector.SERVICES:
+        this.router.navigate(['services'])
+    }
   }
 
   protected readonly PageSelector = PageSelector;

@@ -10,21 +10,7 @@
     <h1>Social Media Management Agency</h1>
   </div>
 </header>
-
-<div [ngSwitch]="pageSelector.value">
-  <div style="padding: 0; margin: 0;" *ngSwitchCase="PageSelector.LANDING">
-    <landing-page (switchTabs)="onTabClick($event)"></landing-page>
-  </div>
-  <pre *ngSwitchCase="PageSelector.WORK_HISTORY">
-    <work-history></work-history>
-  </pre>
-  <pre *ngSwitchCase="PageSelector.SERVICES">
-    <services (switchTabs)="onTabClick($event)"></services>
-  </pre>
-  <pre *ngSwitchCase="PageSelector.CONTACT">
-    <contact></contact>
-  </pre>
-</div>
+<pre><router-outlet></router-outlet></pre>
 <footer>
   <p>St. Paul and Minneapolis, Minnesota</p>
   <p><a href="https://www.instagram.com/levelup.marketing.LLC">@levelup.marketing.llc</a></p>

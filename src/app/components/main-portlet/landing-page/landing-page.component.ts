@@ -2,6 +2,7 @@ import {Component, EventEmitter, Output} from "@angular/core";
 import {Images} from "../../../api/images.enum";
 import {PageSelector} from "../../../api/page-selector.enum";
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'landing-page',
@@ -21,7 +22,6 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
   ]
 })
 export class LandingPageComponent {
-  @Output() switchTabs: EventEmitter<PageSelector> = new EventEmitter<PageSelector>()
   flipCard1: string = 'inactive';
   flipCard2: string = 'inactive';
   flipCard3: string = 'inactive';
@@ -33,8 +33,11 @@ export class LandingPageComponent {
   buildStatement = "We don't just create content; we create experiences that resonate with your audience and drive results. Our expert team leverages data-driven insights and analytics to deliver real-time reports on your social media performance, helping you make informed decisions and seize opportunities for growth."
   succeedStatement = "We are your trusted partner in the digital landscape, always on the cutting edge of industry keywords and trends. Saving your precious time by obtaining, organizing, and optimizing content on your social media platforms, we guarantee that your brand's voice will be heard and respected."
 
-  goToNewPage(page: PageSelector){
-    this.switchTabs.emit(page)
+  constructor(private router: Router){
+  }
+  goToServices(page: PageSelector){
+    gtag('event', 'services_button_clicked');
+    this.router.navigate(['services'])
   }
 
   toggleFlip(cardNumber: number) {
